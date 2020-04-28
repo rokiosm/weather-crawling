@@ -34,3 +34,54 @@ import pandas
 df = pandas.DataFrame(l)
 print(df)
 df.to_csv("output.csv")	
+
+##google weather 실패코드
+
+from bs4 import BeautifulSoup as bs
+from pprint import pprint
+import requests
+import pandas as pd
+
+header = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36'}
+
+html = requests.get('https://weather.com/weather/tenday/l/522c5395403f76a787d134ed5ce600f402dea03ab701cdf2b7847bc31d68dd40')
+
+soup = bs(html.text,'html.parser').text
+
+data1 = soup.find("div", attrs={'id': 'wob_loc'}).text
+print(data1)
+
+    #wob_dp > div.wob_df.wob_ds > div.vk_lgy
+    
+##google weather 실패코드2
+##
+
+from bs4 import BeautifulSoup as bs
+from pprint import pprint
+import requests
+import pandas as pd
+
+header = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36'}
+
+html = requests.get('https://www.google.com/search?q=weather+seoul')
+
+soup = bs(html.content,'html.parser')
+
+data1 = soup.select_one("#wob_dp > div.wob_df.wob_ds > div:nth-child(3) > div.vk_gy > span:nth-child(1)")
+print(data1)
+#wob_wc > div:nth-child(5)
+#wob_dp > div.wob_df.wob_ds
+
+#google weather 실패코드3
+from bs4 import BeautifulSoup as bs
+from pprint import pprint
+import requests
+import pandas as pd
+
+header = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92'}
+
+soup = BeautifulSoup(requests.get("https://www.google.com/search?q=weather+seoul").content)
+    
+html = soup.find("div", attrs={'id': 'wob_loc'}).text
+print(html)tag.attrs
+
