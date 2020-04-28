@@ -1,0 +1,16 @@
+,day,date,desc,temp,precip,wind,humidity
+0,Today,APR 24,Sunny,58°48°,0%,WSW 17 mph ,40%
+1,Sat,APR 25,Partly Cloudy,62°39°,0%,WSW 15 mph ,48%
+2,Sun,APR 26,Mostly Sunny,64°40°,0%,WNW 11 mph ,30%
+3,Mon,APR 27,Mostly Sunny,62°39°,0%,WSW 11 mph ,42%
+4,Tue,APR 28,Mostly Sunny,64°44°,0%,WSW 11 mph ,39%
+5,Wed,APR 29,Sunny,67°46°,10%,SW 14 mph ,46%
+6,Thu,APR 30,Partly Cloudy,71°50°,10%,SSW 11 mph ,44%
+7,Fri,MAY 1,Partly Cloudy,70°52°,20%,SW 10 mph ,55%
+8,Sat,MAY 2,Partly Cloudy,71°53°,10%,SW 9 mph ,57%
+9,Sun,MAY 3,Mostly Cloudy,73°54°,20%,SW 7 mph ,58%
+10,Mon,MAY 4,Showers,72°53°,40%,SSW 8 mph ,57%
+11,Tue,MAY 5,AM Showers,70°52°,50%,WSW 9 mph ,58%
+12,Wed,MAY 6,Partly Cloudy,71°51°,20%,WSW 9 mph ,52%
+13,Thu,MAY 7,Partly Cloudy,72°51°,20%,W 9 mph ,46%
+14,Fri,MAY 8,PM Showers,72°52°,30%,W 9 mph ,41%
